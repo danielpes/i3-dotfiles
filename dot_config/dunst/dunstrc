@@ -1,0 +1,24 @@
+[global]
+    font = Lato 18
+    frame_width = 0
+    transparency = 20 
+    padding = 24 
+    horizontal_padding = 24
+    background = #383c4a
+    foreground = #efefef
+    geometry = "800x5-16-86"
+
+[urgency_low]
+    background = #383c4a
+    foreground = #efefef
+    timeout = 10
+
+[urgency_normal]
+    background = #383c4a
+    foreground = #efefef
+    timeout = 10
+
+[urgency_critical]
+    background = #383c4a
+    foreground = #efefef
+    timeout = 0
