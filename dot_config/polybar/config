@@ -50,10 +50,10 @@ font-0 = Hack:fontformat=truetype:size=18;4
 font-1 = Lato:fontformat=truetype:size=18;4
 font-2 = Lato:fontformat=truetype:size=20;4
 font-3 = FontAwesome:fontformat=truetype:size=18;4
-font-4 = FontAwesome:fontformat=truetype:size=18;4
+font-4 = FontAwesome:fontformat=truetype:size=18;3
 font-5 = Font Awesome 5 Free:size=18;4
 font-6 = Font Awesome 5 Brands:size=18;5
-font-7 = Weather Icons:fontformat=truetype:size=18;4
+font-7 = Weather Icons:fontformat=truetype:size=18;5
 
 
 modules-left = i3 sep1 xwindow
@@ -136,7 +136,7 @@ type = internal/cpu
 interval = 2
 format = <label>
 label =   %percentage:2%%
-label-font = 2
+label-font = 5
 bar-load-indicator = 
 bar-load-width = 6
 bar-load-fill = ▐
