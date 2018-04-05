@@ -21,24 +21,24 @@ my_color14	= ${xrdb:color14}
 my_color15	= ${xrdb:color15}
 
 [bar/main]
+dpi = 96
 bottom = true
 width = 100%
-height = 70
+height = 36
 offset-x = 0%
 offset-y = 0%
 radius = 0.0
 fixed-center = true
 
-#separator = "    "
+# separator = "    "
 
 background = ${colors.my_background}
 foreground =  ${colors.my_foreground}
 
-line-size = 8
+line-size = 3
 line-color = ${colors.my_color4}
 
 border-size = 0
-border-color = ${colors.my_color4}
 
 padding-left = 0
 padding-right = 0
@@ -46,32 +46,31 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = Hack:fontformat=truetype:size=18;4
-font-1 = Lato:fontformat=truetype:size=18;4
-font-2 = Lato:fontformat=truetype:size=20;4
-font-3 = FontAwesome:fontformat=truetype:size=18;4
-font-4 = FontAwesome:fontformat=truetype:size=18;3
-font-5 = Font Awesome 5 Free:size=18;4
-font-6 = Font Awesome 5 Brands:size=18;5
-font-7 = Weather Icons:fontformat=truetype:size=18;5
-
+font-0 = Hack:fontformat=truetype:size=10;2
+font-1 = Lato:fontformat=truetype:size=10;2
+font-2 = Lato:fontformat=truetype:size=10;2
+font-3 = FontAwesome:fontformat=truetype:size=10;2
+font-4 = FontAwesome:fontformat=truetype:size=10;2
+font-5 = Font Awesome 5 Free:size=10;2
+font-6 = Font Awesome 5 Brands:size=10;3
+font-7 = Weather Icons:fontformat=truetype:size=10;3
 
 modules-left = i3 sep1 xwindow
 modules-center = spotify
 modules-right = weather sep3 volume sep3 cpu sep3 memory sep3 date sep3 powermenu
 
-#tray-position = right
-tray-padding = 9
-tray-transparent = false
-tray-offset-y = 0%
-tray-offset-x = 0%
-tray-maxsize = 18
-tray-detached = false
-tray-background = ${colors.my_background}
+tray-position = 
+# tray-padding = 9
+# tray-transparent = false
+# tray-offset-y = 0%
+# tray-offset-x = 0%
+# tray-maxsize = 18
+# tray-detached = false
+# tray-background = ${colors.my_background}
 
 wm-restack = i3
 
-#override-redirect = true
+# override-redirect = true
 
 [module/i3]
 type = internal/i3

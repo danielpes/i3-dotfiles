@@ -4,7 +4,8 @@
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
-exec --no-startup-id xrandr --dpi 192
+#exec --no-startup-id xrandr --dpi 192
+
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
 
@@ -32,7 +33,8 @@ floating_modifier $mod
 bindsym $mod+Return exec terminator
 bindsym $mod+t exec terminator
 
-bindsym $mod+l exec --no-startup-id i3exit lock
+bindsym $mod+l exec --no-startup-id /home/daniel/.config/i3/scripts/lock.sh
+bindsym $mod+Shift+l exec --no-startup-id /home/daniel/.config/i3/scripts/lock.sh
 
 # kill focused window
 bindsym $mod+Escape kill
@@ -126,9 +128,9 @@ bindsym $mod+Ctrl+e layout toggle split
 bindsym $mod+Home exec playerctl play-pause
 bindsym $mod+Insert exec playerctl previous
 bindsym $mod+Prior exec playerctl next
-bindsym $mod+End exec pactl set-sink-mute 1 toggle
-bindsym $mod+Delete exec pactl set-sink-volume 1 -5%
-bindsym $mod+Next exec pactl set-sink-volume 1 +5%
+bindsym $mod+End exec pactl set-sink-mute 1 toggle, exec pactl set-sink-mute 0 toggle
+bindsym $mod+Delete exec pactl set-sink-volume 1 -5%, exec pactl set-sink-volume 0 -5%
+bindsym $mod+Next exec pactl set-sink-volume 1 +5%, exec pactl set-sink-volume 0 +5%
 
 
 # toggle tiling / floating
@@ -397,7 +399,7 @@ exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id fix_xcursor
 
 # Set wallpaper
-exec_always --no-startup-id ./scripts/unsplash-wallpaper.sh
+exec_always --no-startup-id /home/daniel/.config/i3/scripts/unsplash-wallpaper.sh
 
 # Disable caps-lock
 exec --no-startup-id setxkbmap -option caps:none

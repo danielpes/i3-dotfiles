@@ -139,6 +139,7 @@
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
 }
 #textbox-prompt-colon {
+    enabled: false;
     expand:     false;
     str:        ":";
     margin:     0px 0.3em 0em 0em ;
