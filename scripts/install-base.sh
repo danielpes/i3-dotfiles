@@ -39,5 +39,5 @@ cp ../.zshrc $HOME/.zshrc
 sudo cp ../zprofile /etc/zsh/zprofile
 
 sudo systemctl enable lightdm.service
-sleep1
+sleep 1
 sudo reboot
