@@ -5,9 +5,7 @@ echo "TMPDIR=/home/daniel/.tmp/" | sudo tee --append /etc/yaourtrc
 
 yaourt -S --needed --noconfirm \
 \
-xorg-server \
-xorg-apps \
-xorg-xinit \
+xorg-server xorg-apps xorg-xinit \
 \
 gtk3 \
 lightdm-gtk-greeter \
@@ -15,8 +13,7 @@ lxappearance \
 arc-gtk-theme \
 paper-icon-theme \
 \
-i3-gaps \
-i3lock-color \
+i3-gaps i3lock-color \
 perl-anyevent-i3 \
 rxvt-unicode \
 compton \
@@ -25,37 +22,16 @@ nitrogen \
 polybar \
 rofi \
 \
-ttf-google-fonts-git \
-ttf-fira-code \
-ttf-fira-mono \
-ttf-lato \
-ttf-font-awesome \
-ttf-font-awesome-4 \
-ttf-material-icons \
-ttf-weather-icons \
+ttf-google-fonts-git ttf-fira-code ttf-fira-mono ttf-lato 
+ttf-font-awesome ttf-font-awesome-4 ttf-material-icons ttf-weather-icons \
 \
-cups \
-cups-pdf \
-ghostscript \
-libcups \
-system-config-printer \
+cups cups-pdf ghostscript libcups system-config-printer \
 \
-alsa-lib \
-alsa-plugins \
-alsa-utils \
-gst-libav \
-gst-plugins-base \
-gst-plugins-good \
-gstreamer \
-pulseaudio-ctl \
-pacli \
-pavucontrol \
-playerctl \
-pulseaudio \
-pulseaudio-alsa \
+alsa-lib alsa-plugins alsa-utils \
+gstreamer gst-libav gst-plugins-base gst-plugins-good \
+pulseaudio pulseaudio-alsa pulseaudio-ctl pacli pavucontrol playerctl \
 \
-networkmanager \
-network-manager-applet \
+networkmanager network-manager-applet \
 \
 curl \
 flashplugin \
@@ -88,9 +64,7 @@ xorg-xwininfo \
 zsh \
 
 sudo systemctl enable NetworkManager.service
-sudo systemctl start NetworkManager.service
 
 sudo systemctl enable lightdm.service
-sudo systemctl start lightdm.service
 
 rm -rf $HOME/.tmp/*
