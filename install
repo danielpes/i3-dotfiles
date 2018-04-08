@@ -48,7 +48,7 @@ gst-plugins-base \
 gst-plugins-good \
 gstreamer \
 pulseaudio-ctl \
-pactl \
+pacli \
 pavucontrol \
 playerctl \
 pulseaudio \
