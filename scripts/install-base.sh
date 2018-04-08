@@ -23,11 +23,15 @@ yaourt -S --needed --noconfirm \
     xorg-server \
     xorg-xinit \
     zsh \
-    zsh-pure-prompt
 
 # Install Oh-My-Zsh
 echo "===> Installing Oh-My-Zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+echo "Press any key to continue..."
+read
+
+yaourt -S zsh-pure-prompt
 
 # Configure zshrc and zprofile
 echo "===> Configuring zsh and zprofile..."
