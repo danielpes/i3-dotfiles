@@ -36,7 +36,7 @@ yaourt -S --needed --noconfirm  zsh-pure-prompt
 # Configure zshrc and zprofile
 echo "===> Configuring zsh and zprofile..."
 cp ../.zshrc $HOME/.zshrc
-cp ../zprofile /etc/zsh/zprofile
+sudo cp ../zprofile /etc/zsh/zprofile
 
 sudo systemctl enable lightdm.service
 sleep1
