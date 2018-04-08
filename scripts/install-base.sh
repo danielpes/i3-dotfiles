@@ -1,3 +1,5 @@
+#!/bin/bash
+
 mkdir $HOME/Pictures
 mkdir $HOME/Downloads
 mkdir $HOME/Videos

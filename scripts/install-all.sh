@@ -1,3 +1,4 @@
+#!/bin/zsh
 
 # nvm and node
 echo "===> Installing node and npm global packages..."
@@ -26,7 +27,7 @@ yaourt -S --needed --noconfirm \
     polybar \
     rofi \
     \
-    ttf-google-fonts-git ttf-fira-code ttf-fira-mono \
+    ttf-google-fonts-git ttf-fira-code ttf-fira-mono ttf-hack \
     ttf-font-awesome ttf-font-awesome-4 ttf-material-icons ttf-weather-icons \
     \
     cups cups-pdf ghostscript libcups system-config-printer \
