@@ -5,12 +5,10 @@ mkdir $HOME/.tmp
 echo "TMPDIR=$HOME/.tmp/" | sudo tee --append /etc/yaourtrc
 
 yaourt -S --needed --noconfirm \
-    arc-gtk-theme \
     gtk3 \
-    i3-gaps i3lock-color \
+    i3-gaps \
+    i3lock-color \
     lightdm-gtk-greeter \
-    lxappearance \
-    paper-icon-theme \
     rxvt-unicode \
     xorg-apps \
     xorg-server \

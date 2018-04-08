@@ -18,6 +18,7 @@ yaourt -S --needed --noconfirm \
     \
     networkmanager network-manager-applet \
     \
+    arc-gtk-theme \
     curl \
     flashplugin \
     franz \
@@ -32,8 +33,10 @@ yaourt -S --needed --noconfirm \
     jq \
     libmpdclient \
     lsb-release \
+    lxappearance \
     net-tools \
     nvm \
+    paper-icon-theme \
     pcmanfm \
     pdftk \
     ruby \
