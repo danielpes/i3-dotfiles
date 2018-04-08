@@ -1,0 +1,98 @@
+sudo rm /etc/lightdm
+echo "exec i3" > $HOME/.xinitrc
+mkdir $HOME/.tmp
+echo "TMPDIR=/home/daniel/.tmp/" | sudo tee --append /etc/yaourtrc
+
+yaourt -S --needed --noconfirm \
+\
+xorg-server \
+xorg-apps \
+xorg-xinit \
+\
+gtk3 \
+lightdm-gtk-greeter \
+lxappearence \
+arc-gtk-theme \
+paper-icon-theme \
+\
+i3-gaps \
+i3lock-color \
+perl-anyevent-i3 \
+rxcv-unicode \
+compton \
+dunst \
+nitrogen \
+polybar \
+rofi \
+\
+ttf-google-fonts-git \
+ttf-fira-code \
+ttf-fira-mono \
+ttf-lato \
+ttf-font-awesome \
+ttf-font-awesome-4 \
+ttf-material-icons \
+ttf-weather-icons \
+\
+cups \
+cups-pdf \
+ghostscript \
+libcups \
+system-config-printer \
+\
+alsa-lib \
+alsa-plugins \
+alsa-utils \
+gst-libav \
+gst-plugins-base \
+gst-plugins-good \
+gstreamer \
+pacli \
+pactl \
+pavucontrol \
+playerctl \
+pulseaudio \
+pulseaudio-alsa \
+\
+networkmanager \
+network-manager-applet \
+\
+curl \
+dbus-send \
+flashplugin \
+franz \
+git \
+gitkraken \
+google-chrome \
+gparted \
+gucharmap \
+htop  \
+inkscape  \
+jdk8-openjdk \
+jq \
+libmpdclient \
+lsb-release \
+net-tools \
+nvm \
+pcmanfm \
+pdftk \
+ruby \
+screenfetch  \
+scrot \
+spotify \
+terminator \
+vim \
+visual-studio-code-bin \
+vlc \
+wget \
+xorg-xwininfo \
+xwininfo \
+zsh \
+
+sudo systemctl enable NetworkManager.service
+sudo systemctl start NetworkManager.service
+
+sudo systemctl enable lightdm.service
+sudo systemctl start lightdm.service
+
+rm -rf $HOME/.tmp/*
