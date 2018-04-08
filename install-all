@@ -28,7 +28,6 @@ yaourt -S --needed --noconfirm \
     gparted \
     gucharmap \
     htop  \
-    inkscape  \
     jdk8-openjdk \
     jq \
     libmpdclient \
