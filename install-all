@@ -1,0 +1,59 @@
+yaourt -S --needed --noconfirm \
+    \
+    gtk3 \
+    lxappearance \
+    arc-gtk-theme \
+    paper-icon-theme \
+    \
+    perl-anyevent-i3 \
+    rxvt-unicode \
+    compton \
+    dunst \
+    nitrogen \
+    polybar \
+    rofi \
+    \
+    ttf-google-fonts-git ttf-fira-code ttf-fira-mono \
+    ttf-font-awesome ttf-font-awesome-4 ttf-material-icons ttf-weather-icons \
+    \
+    cups cups-pdf ghostscript libcups system-config-printer \
+    \
+    alsa-lib alsa-plugins alsa-utils \
+    gstreamer gst-libav gst-plugins-base gst-plugins-good \
+    pulseaudio pulseaudio-alsa pulseaudio-ctl pacli pavucontrol playerctl \
+    \
+    networkmanager network-manager-applet \
+    \
+    curl \
+    flashplugin \
+    franz \
+    git \
+    gitkraken \
+    google-chrome \
+    gparted \
+    gucharmap \
+    htop  \
+    inkscape  \
+    jdk8-openjdk \
+    jq \
+    libmpdclient \
+    lsb-release \
+    net-tools \
+    nvm \
+    pcmanfm \
+    pdftk \
+    ruby \
+    screenfetch \
+    scrot \
+    spotify \
+    terminator \
+    vim \
+    visual-studio-code-bin \
+    vlc \
+    wget \
+    xorg-xwininfo \
+    zsh \
+
+sudo systemctl enable NetworkManager.service
+
+rm -rf $HOME/.tmp/*
