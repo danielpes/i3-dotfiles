@@ -1,12 +1,19 @@
 [global]
-    font = Lato 18
-    frame_width = 0
-    transparency = 20 
+    font = Lato 22
+    line_height = 8
     padding = 24 
     horizontal_padding = 24
+    transparency = 20 
     background = #383c4a
     foreground = #efefef
-    geometry = "800x5-16-86"
+    geometry = "800x5-16-88"
+    format = "<b>%s</b>\n%b"
+    separator_height = 4
+    separator_color = frame
+
+[frame]
+    width = 4 
+    color = "#4b5162"
 
 [urgency_low]
     background = #383c4a

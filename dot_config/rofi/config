@@ -13,11 +13,11 @@ rofi.lines: 3
 rofi.font: Lato Regular 36
 rofi.bw: 0
 rofi.columns: 1
-rofi.padding: 360
+rofi.padding: 720
 rofi.fixed-num-lines: true
 rofi.hide-scrollbar: true
 rofi.matching: normal
 rofi.theme-str: '#prompt-colon { enabled: false;}'
 rofi.fullscreen: true
 rofi.display-run:
-!rofi.dpi: 192
+rofi.dpi: 192
