@@ -19,6 +19,7 @@ yaourt -S --needed --noconfirm \
     xorg-apps \
     xorg-server \
     xorg-xinit \
+    zsh
 
 # Oh-My-Zsh
 echo "===> Installing Oh-My-Zsh..."

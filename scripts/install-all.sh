@@ -73,8 +73,7 @@ yaourt -S --needed --noconfirm \
     vlc \
     watchdog \
     wget \
-    xorg-xwininfo \
-    zsh \
+    xorg-xwininfo
 
 # VS Code extensions
 echo "===> Installing VSCode extensions"
