@@ -1,31 +1,30 @@
 [global]
-    font = Lato 22
+    font = Lato 11
     line_height = 8
-    padding = 24 
-    horizontal_padding = 24
+    padding = 12 
+    horizontal_padding = 12
     transparency = 20 
-    background = #383c4a
-    foreground = #efefef
-    geometry = "800x5-16-88"
-    format = "<b>%s</b>\n%b"
-    separator_height = 4
+    background = "#383c4a"
+    foreground = "#efefef"
+    geometry = "440x5-8-44"
+    format = "<b>[%a] %s</b>\n%b"
+    separator_height = 2
     separator_color = frame
 
-[frame]
-    width = 4 
-    color = "#4b5162"
+    frame_width = 2
+    frame_color = "#4b5162"
 
 [urgency_low]
-    background = #383c4a
-    foreground = #efefef
+    background = "#383c4a"
+    foreground = "#efefef"
     timeout = 10
 
 [urgency_normal]
-    background = #383c4a
-    foreground = #efefef
+    background = "#383c4a"
+    foreground = "#efefef"
     timeout = 10
 
 [urgency_critical]
-    background = #383c4a
-    foreground = #efefef
+    background = "#383c4a"
+    foreground = "#efefef"
     timeout = 0

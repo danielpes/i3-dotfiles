@@ -1,6 +1,3 @@
-mkdir $HOME/Pictures
-mkdir $HOME/Downloads
-mkdir $HOME/Videos
 
 # nvm and node
 echo "===> Installing node and npm global packages..."
