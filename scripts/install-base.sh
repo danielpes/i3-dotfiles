@@ -31,7 +31,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 echo "Press any key to continue..."
 read
 
-yaourt -S zsh-pure-prompt
+yaourt -S --needed --noconfirm  zsh-pure-prompt
 
 # Configure zshrc and zprofile
 echo "===> Configuring zsh and zprofile..."
