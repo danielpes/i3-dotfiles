@@ -21,10 +21,10 @@ my_color14	= ${xrdb:color14}
 my_color15	= ${xrdb:color15}
 
 [bar/main]
-dpi = 192
+dpi = 96
 bottom = true
 width = 100%
-height = 72
+height = 36
 offset-x = 0%
 offset-y = 0%
 radius = 0.0
@@ -46,14 +46,14 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = Hack:fontformat=truetype:size=10;4
-font-1 = Lato:fontformat=truetype:size=10;4
-font-2 = Lato:fontformat=truetype:size=10;4
-font-3 = FontAwesome:fontformat=truetype:size=10;4
-font-4 = FontAwesome:fontformat=truetype:size=10;3
-font-5 = Font Awesome 5 Free:size=10;4
-font-6 = Font Awesome 5 Brands:size=10;5
-font-7 = Weather Icons:fontformat=truetype:size=10;5
+font-0 = Hack:fontformat=truetype:size=10;2
+font-1 = Lato:fontformat=truetype:size=10;2
+font-2 = Lato:fontformat=truetype:size=10;2
+font-3 = FontAwesome:fontformat=truetype:size=10;2
+font-4 = FontAwesome:fontformat=truetype:size=10;2
+font-5 = Font Awesome 5 Free:size=10;2
+font-6 = Font Awesome 5 Brands:size=10;3
+font-7 = Weather Icons:fontformat=truetype:size=10;3
 
 modules-left = i3 sep1 xwindow
 modules-center = spotify
@@ -91,20 +91,20 @@ label-mode-background = ${colors.my_secondary}
 label-focused = %name% %icon%
 label-focused-background = ${colors.my_secondary}
 label-focused-underline = ${colors.my_foreground}
-label-focused-padding = 1
+label-focused-padding = 2
 
 label-unfocused = %name% %icon%
-label-unfocused-padding = 1
+label-unfocused-padding = 2
 
 label-visible = %name%%index%
 label-visible-underline = ${colors.my_foreground}
-label-visible-padding = 1
+label-visible-padding = 2
 
 label-urgent = %name% %icon%
 label-urgent-foreground = ${colors.my_foreground}
 label-urgent-background = ${colors.my_background}
 label-urgent-underline = ${colors.my_secondary}
-label-urgent-padding = 1
+label-urgent-padding = 2
 
 [module/date]
 type = internal/date
@@ -258,13 +258,13 @@ label-padding = 1
 
 [module/sep1]
 type = custom/text
-content = " "
+content = "  "
 
 [module/sep2]
 type = custom/text
-content = "  "
+content = "    "
 
 [module/sep3]
 type = custom/text
-content = "   "
+content = "      "
 
