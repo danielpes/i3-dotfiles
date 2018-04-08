@@ -21,7 +21,6 @@ yaourt -S --needed --noconfirm \
     arc-gtk-theme \
     curl \
     flashplugin \
-    franz \
     git \
     gitkraken \
     google-chrome \
