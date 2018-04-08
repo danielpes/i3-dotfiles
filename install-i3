@@ -5,10 +5,16 @@ mkdir $HOME/.tmp
 echo "TMPDIR=$HOME/.tmp/" | sudo tee --append /etc/yaourtrc
 
 yaourt -S --needed --noconfirm \
-    \
-    xorg-server xorg-apps xorg-xinit \
+    arc-gtk-theme \
+    gtk3 \
     i3-gaps i3lock-color \
-    lightdm-gtk-greeter 
+    lightdm-gtk-greeter \
+    lxappearance \
+    paper-icon-theme \
+    rxvt-unicode \
+    xorg-apps \
+    xorg-server \
+    xorg-xinit \
 
 sudo systemctl enable lightdm.service
 sleep1

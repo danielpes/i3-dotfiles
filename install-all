@@ -1,12 +1,6 @@
 yaourt -S --needed --noconfirm \
     \
-    gtk3 \
-    lxappearance \
-    arc-gtk-theme \
-    paper-icon-theme \
-    \
     perl-anyevent-i3 \
-    rxvt-unicode \
     compton \
     dunst \
     nitrogen \
