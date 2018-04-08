@@ -81,6 +81,10 @@ ws-icon-2 = 3;
 ws-icon-3 = 4;
 ws-icon-default = 
 
+#label-visible-font = 2
+#label-mode-font = 2
+#label-focused-font = 2
+#label-unfocused-font = 2
 label-unfocused-background = ${colors.my_background}
 #label-unfocused-foreground = ${colors.my_foreground}
 
@@ -91,25 +95,25 @@ label-mode-background = ${colors.my_secondary}
 label-focused = %name% %icon%
 label-focused-background = ${colors.my_secondary}
 label-focused-underline = ${colors.my_foreground}
-label-focused-padding = 2
+label-focused-padding = 1
 
 label-unfocused = %name% %icon%
-label-unfocused-padding = 2
+label-unfocused-padding = 1
 
 label-visible = %name%%index%
 label-visible-underline = ${colors.my_foreground}
-label-visible-padding = 2
+label-visible-padding = 1
 
 label-urgent = %name% %icon%
 label-urgent-foreground = ${colors.my_foreground}
 label-urgent-background = ${colors.my_background}
 label-urgent-underline = ${colors.my_secondary}
-label-urgent-padding = 2
+label-urgent-padding = 1
 
 [module/date]
 type = internal/date
 interval = 0.5
-time = "%a, %d %b   %H:%M:%S"
+time = "%a, %d %b  %H:%M:%S"
 label = %date% %time%
 label-font = 2
 
@@ -258,13 +262,12 @@ label-padding = 1
 
 [module/sep1]
 type = custom/text
-content = "  "
+content = " "
 
 [module/sep2]
 type = custom/text
-content = "    "
+content = "  "
 
 [module/sep3]
 type = custom/text
-content = "      "
-
+content = "   "
