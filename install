@@ -11,14 +11,14 @@ xorg-xinit \
 \
 gtk3 \
 lightdm-gtk-greeter \
-lxappearence \
+lxappearance \
 arc-gtk-theme \
 paper-icon-theme \
 \
 i3-gaps \
 i3lock-color \
 perl-anyevent-i3 \
-rxcv-unicode \
+rxvt-unicode \
 compton \
 dunst \
 nitrogen \
@@ -47,7 +47,7 @@ gst-libav \
 gst-plugins-base \
 gst-plugins-good \
 gstreamer \
-pacli \
+pulseaudio-ctl \
 pactl \
 pavucontrol \
 playerctl \
@@ -58,7 +58,6 @@ networkmanager \
 network-manager-applet \
 \
 curl \
-dbus-send \
 flashplugin \
 franz \
 git \
@@ -86,7 +85,6 @@ visual-studio-code-bin \
 vlc \
 wget \
 xorg-xwininfo \
-xwininfo \
 zsh \
 
 sudo systemctl enable NetworkManager.service
