@@ -1,3 +1,4 @@
 #!/bin/bash
-wget "https://source.unsplash.com/featured/1920x1080/daily/?grayscale" -O ~/Pictures/wallpaper.img
-nitrogen --set-scaled ~/Pictures/wallpaper.img
+target_file=/usr/share/pixmaps/wallpaper.jpg
+sudo wget "https://source.unsplash.com/1920x1080/daily/?grayscale" -O $target_file
+nitrogen --set-scaled $target_file
