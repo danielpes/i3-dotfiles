@@ -1,7 +1,10 @@
 #!/bin/bash
 
-# lighdm-gtk-greeter
-sudo cp /etc/lightdm/ ../lightdm-gtk-greeter.conf
+# gtk-2.0 theming
+cp $HOME/.gtkrc-2.0 ../gtkrc-2.0
+
+# lightdm-gtk-greeter
+sudo cp /etc/lightdm/lightdm-gtk-greeter.conf ../lightdm-gtk-greeter.conf
 
 # Xresources
 sudo cp $HOME/.Xresources ../Xresources
@@ -16,7 +19,10 @@ for d in ./*/ ; do
     cp -r $source $target
     echo ""
 done
-for f in ./*.*; do
+for f in ./*; do
+    if [ ! -f "$f" ]; then 
+        continue
+    fi
     filename=`basename "$f"`
     source="$HOME/.config/$filename"
     target=$PWD

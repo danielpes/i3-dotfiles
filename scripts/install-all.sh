@@ -38,13 +38,16 @@ yaourt -S --needed --noconfirm \
     \
     networkmanager network-manager-applet \
     \
+    arandr \
     arc-gtk-theme \
     curl \
     flashplugin \
+    franz \
     git \
     gitkraken \
     google-chrome \
     gparted \
+    gthumb \
     gucharmap \
     htop  \
     jdk8-openjdk \
@@ -52,6 +55,9 @@ yaourt -S --needed --noconfirm \
     libmpdclient \
     lsb-release \
     lxappearance \
+    lxinput \
+    lxmusic \
+    lxtask \
     net-tools \
     nvm \
     paper-icon-theme \
@@ -61,6 +67,7 @@ yaourt -S --needed --noconfirm \
     screenfetch \
     scrot \
     spotify \
+    simple-scan \
     terminator \
     vim \
     visual-studio-code-bin \

@@ -35,7 +35,7 @@ fixed-center = true
 background = ${colors.my_background}
 foreground =  ${colors.my_foreground}
 
-line-size = 6
+line-size = 4
 line-color = ${colors.my_color4}
 
 border-size = 0
@@ -59,18 +59,7 @@ modules-left = i3 sep1 xwindow
 modules-center = spotify
 modules-right = weather sep3 volume sep3 cpu sep3 memory sep3 date sep3 powermenu
 
-tray-position = 
-# tray-padding = 9
-# tray-transparent = false
-# tray-offset-y = 0%
-# tray-offset-x = 0%
-# tray-maxsize = 18
-# tray-detached = false
-# tray-background = ${colors.my_background}
-
 wm-restack = i3
-
-# override-redirect = true
 
 [module/i3]
 type = internal/i3
@@ -86,7 +75,7 @@ ws-icon-default = 
 #label-focused-font = 2
 #label-unfocused-font = 2
 label-unfocused-background = ${colors.my_background}
-#label-unfocused-foreground = ${colors.my_foreground}
+label-unfocused-foreground = ${colors.my_foreground}
 
 label-mode = %mode%
 label-mode-padding = 2
