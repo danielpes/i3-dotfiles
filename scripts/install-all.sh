@@ -42,9 +42,9 @@ yaourt -S --needed --noconfirm \
     arc-gtk-theme \
     curl \
     flashplugin \
-    franz \
     git \
     gitkraken \
+    gnome-calculator \
     google-chrome \
     gparted \
     gthumb \
