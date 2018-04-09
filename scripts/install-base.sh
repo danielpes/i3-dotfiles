@@ -11,7 +11,7 @@ echo "TMPDIR=$HOME/.tmp/" | sudo tee --append /etc/yaourtrc
 
 # System upgrade
 echo "===> Upgrading system..."
-sudo pacman -Syu
+sudo pacman --noconfirm -Syu
 
 # Base packages
 echo "===> Installing base packages..."
