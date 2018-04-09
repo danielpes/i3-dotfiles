@@ -96,5 +96,8 @@ sudo systemctl start watchdog.service
 
 rm -rf $HOME/.tmp/*
 
-sleep 1
+sleep 2
+echo "Press any key to reboot..."
+read
+
 sudo reboot
