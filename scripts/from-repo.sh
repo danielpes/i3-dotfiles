@@ -17,5 +17,6 @@ for d in ./*/ ; do
 done
 
 # root gtk theming
+cp ../gtkrc-2.0 $HOME/.gtkrc-2.0
 sudo ln -s $HOME/.gtkrc-2.0 /etc/gtk-2.0/gtkrc
 sudo ln -s $HOME/.config/gtk-3.0/settings.ini /etc/gtk-3.0/settings.ini
