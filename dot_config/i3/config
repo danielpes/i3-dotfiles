@@ -77,7 +77,6 @@ bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym Print exec --no-startup-id i3-scrot
 bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
 bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
-bindsym $mod+Shift+h exec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # focus_follows_mouse no
@@ -225,8 +224,6 @@ for_window [class="GParted"] floating enable border normal
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
-for_window [class="Manjaro-hello"] floating enable
-for_window [class="Manjaro Settings Manager"] floating enable border normal
 for_window [title="MuseScore: Play Panel"] floating enable
 for_window [class="Nitrogen"] floating enable border normal
 for_window [class="Oblogout"] fullscreen enable
@@ -401,7 +398,7 @@ exec --no-startup-id start_conky_maia
 exec_always --no-startup-id fix_xcursor
 
 # Set wallpaper
-exec_always --no-startup-id /home/daniel/.config/i3/scripts/unsplash-wallpaper.sh
+exec_always --no-startup-id unsplash-wallpaper
 
 # Disable caps-lock
 exec --no-startup-id setxkbmap -option caps:none
