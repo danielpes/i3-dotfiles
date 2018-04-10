@@ -6,14 +6,15 @@ cp $HOME/.gtkrc-2.0 ../gtkrc-2.0
 # lightdm-gtk-greeter
 sudo cp /etc/lightdm/lightdm-gtk-greeter.conf ../lightdm-gtk-greeter.conf
 
-# Xresources
+# Xresources and xsession
 sudo cp $HOME/.Xresources ../Xresources
+sudo cp $HOME/.xsession ../xsession
 
 # bin/
 cp $HOME/bin/* ../bin/
 
 # .config/
-cd ../dot_config
+cd ../config
 for d in ./*/ ; do
     dirname=`basename "$d"`
     source="$HOME/.config/$dirname"

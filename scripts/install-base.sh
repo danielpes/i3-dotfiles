@@ -1,13 +1,15 @@
 #!/bin/bash
 
-mkdir $HOME/Pictures
-mkdir $HOME/Downloads
-mkdir $HOME/Videos
+ZDOTDIR=$HOME/.config/zsh/
+
 sudo rm /etc/lightdm
 sudo chown daniel:users /usr/share/pixmaps/
 
-echo "zsh -l -c i3" > $HOME/.xinitrc
+mkdir $HOME/Pictures
+mkdir $HOME/Downloads
+mkdir $HOME/Videos
 mkdir $HOME/.tmp
+mkdir -p $ZDOTDIR
 echo "TMPDIR=$HOME/.tmp/" | sudo tee --append /etc/yaourtrc
 
 # System upgrade
@@ -29,8 +31,11 @@ yay -S --needed --noconfirm  zsh-pure-prompt
 
 # Configure zshrc and zprofile
 echo "===> Configuring zsh and zprofile..."
-cp ../.zshrc $HOME/.zshrc
-sudo cp ../zprofile /etc/zsh/zprofile
+cp ../config/zsh/* $ZDOTDIR
+
+# Create .xsession file
+echo "===> Creating $HOME/.xsession..."
+cp ../xsession $HOME/.xsession
 
 sudo systemctl enable lightdm.service
 

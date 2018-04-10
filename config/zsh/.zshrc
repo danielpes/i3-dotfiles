@@ -1,5 +1,3 @@
-source /etc/zsh/zprofile
-
 # If you come from bash you might have to change your $PATH.
 # export PATH=$PATH:/usr/local/bin:$HOME/bin
 

@@ -35,8 +35,8 @@ floating_modifier $mod
 bindsym $mod+Return exec terminator
 bindsym $mod+t exec terminator
 
-bindsym $mod+l exec --no-startup-id dm-tool lock
-bindsym $mod+Shift+l exec --no-startup-id dm-tool lock
+bindsym $mod+l exec --no-startup-id i3exit lock
+bindsym $mod+Shift+l exec --no-startup-id i3exit lock
 
 # kill focused window
 bindsym $mod+Escape kill

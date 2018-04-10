@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 # Arch packages from official repos
 echo "===> Installing Arch packages from official repos..."
