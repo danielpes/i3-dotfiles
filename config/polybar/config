@@ -105,6 +105,7 @@ interval = 0.5
 time = "%a, %d %b  %H:%M:%S"
 label = %date% %time%
 label-font = 2
+format = %{A1:gsimplecal:}<label>%{A}
 
 [module/spotify]
 type = custom/script
@@ -126,7 +127,7 @@ label-font = 8
 [module/cpu]
 type = internal/cpu
 interval = 2
-format = <label>
+format =  %{A1:lxtask:}<label>%{A}
 label =   %percentage:2%%
 label-font = 5
 bar-load-indicator = 
@@ -138,7 +139,7 @@ bar-load-empty-foreground = ${colors.my_secondary}
 [module/memory]
 type = internal/memory
 interval = 4
-format = <label> <bar-used>
+format = %{A1:lxtask:}<label> <bar-used>%{A}
 label = %gb_used%
 label-font = 2
 bar-used-indicator =

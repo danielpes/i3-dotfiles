@@ -13,7 +13,9 @@ dunst
 flashplugin
 ghostscript
 git
+gksu
 gparted
+gsimplecal
 gst-libav
 gst-plugins-base
 gst-plugins-good
@@ -27,6 +29,7 @@ libcups
 lsb-release
 lxappearance
 lxinput
+neofetch
 network-manager-applet
 networkmanager
 nitrogen
@@ -43,9 +46,9 @@ screenfetch
 scrot
 system-config-printer
 terminator
-ttf-hack
 ttf-fira-mono
 ttf-font-awesome
+ttf-hack
 vim
 wget
 xorg-xwininfo
