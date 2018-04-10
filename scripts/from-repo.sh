@@ -6,6 +6,10 @@ sudo cp ../lightdm-gtk-greeter.conf /etc/lightdm/
 # Xresources
 sudo cp ../Xresources $HOME/.Xresources
 
+# $HOME/bin/
+mkdir -p $HOME/bin/
+cp ../bin/* $HOME/bin/
+
 # .config/
 cd ../dot_config
 cp ./* $HOME/.config/
