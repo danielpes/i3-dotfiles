@@ -31,7 +31,7 @@ yay -S --needed --noconfirm  zsh-pure-prompt
 
 # Configure zshrc and zprofile
 echo "===> Configuring zsh and zprofile..."
-cp ../config/zsh/. $ZDOTDIR
+cp -r ../config/zsh/. $ZDOTDIR
 
 # Create .xsession file
 echo "===> Creating $HOME/.xsession..."
