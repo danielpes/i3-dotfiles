@@ -30,7 +30,6 @@ lxinput
 network-manager-applet
 networkmanager
 nitrogen
-paper-icon-theme-git
 pavucontrol
 pcmanfm
 perl-anyevent-i3
@@ -44,7 +43,6 @@ scrot
 system-config-printer
 terminator
 ttf-font-awesome
-ttf-material-icons
 vim
 wget
 xorg-xwininfo

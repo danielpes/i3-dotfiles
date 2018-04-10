@@ -32,5 +32,9 @@ cp ../.zshrc $HOME/.zshrc
 sudo cp ../zprofile /etc/zsh/zprofile
 
 sudo systemctl enable lightdm.service
+
 sleep 2
+echo "Press any key to reboot..."
+read
+
 sudo reboot
