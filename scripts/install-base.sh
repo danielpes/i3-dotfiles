@@ -4,6 +4,7 @@ mkdir $HOME/Pictures
 mkdir $HOME/Downloads
 mkdir $HOME/Videos
 sudo rm /etc/lightdm
+sudo chown daniel:users /usr/share/pixmaps/
 
 echo "zsh -l -c i3" > $HOME/.xinitrc
 mkdir $HOME/.tmp
