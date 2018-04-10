@@ -1,0 +1,10 @@
+gtk3
+i3-gaps
+i3lock-color
+lightdm-gtk-greeter
+rxvt-unicode
+xorg-apps
+xorg-server
+xorg-xinit
+yay
+zsh
