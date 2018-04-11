@@ -1,5 +1,6 @@
 [global_config]
   borderless = True
+  enabled_plugins = TerminatorThemes, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
   extra_styling = False
   inactive_color_offset = 1.0
   suppress_multiple_term_dialog = True
@@ -35,16 +36,83 @@
 [plugins]
 [profiles]
   [[default]]
-    audible_bell = True
-    background_color = "#001e27"
-    background_darkness = 0.9
+    background_color = "#2f343f"
+    background_darkness = 0.95
+    background_type = transparent
     copy_on_selection = True
     cursor_color = "#f34b00"
     cursor_shape = ibeam
-    font = Inconsolata Medium 11
+    font = Inconsolata 12
     foreground_color = "#9cc2c3"
+    icon_bell = False
     palette = "#002831:#d11c24:#6cbe6c:#a57706:#2176c7:#c61c6f:#259286:#eae3cb:#006488:#f5163b:#51ef84:#b27e28:#178ec8:#e24d8e:#00b39e:#fcf4dc"
     scrollback_infinite = True
     scrollbar_position = hidden
     show_titlebar = False
     use_system_font = False
+  [[Ayu mirage]]
+    background_color = "#212733"
+    cursor_color = "#FFD580"
+    foreground_color = "#d9d7ce"
+    palette = "#212733:#ff3333:#bae67e:#ffd580:#5ccfe6:#d4bfff:#5ccfe6:#3d4752:#3e4b59:#ff3333:#bae67e:#ffd580:#5ccfe6:#d4bfff:#5ccfe6:#eeeeec"
+  [[Flat]]
+    background_color = "#002240"
+    cursor_color = "#e5be0c"
+    foreground_color = "#2cc55d"
+    palette = "#222d3f:#a82320:#32a548:#e58d11:#3167ac:#781aa0:#2c9370:#b0b6ba:#212c3c:#d4312e:#2d9440:#e5be0c:#3c7dd2:#8230a7:#35b387:#e7eced"
+  [[Freya]]
+    background_color = "#252e32"
+    cursor_color = "#839496"
+    font = Inconsolata 10
+    foreground_color = "#94a3a5"
+    icon_bell = False
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#ec0048:#2aa198:#94a3a5:#586e75:#cb4b16:#859900:#b58900:#268bd2:#d33682:#2aa198:#6c71c4"
+    show_titlebar = False
+    use_system_font = False
+  [[Japanesque]]
+    background_color = "#1e1e1e"
+    cursor_color = "#edcf4f"
+    foreground_color = "#f7f6ec"
+    palette = "#343935:#cf3f61:#7bb75b:#e9b32a:#4c9ad4:#a57fc4:#389aad:#fafaf6:#595b59:#d18fa6:#767f2c:#78592f:#135979:#604291:#76bbca:#b2b5ae"
+  [[MaterialDark]]
+    background_color = "#232322"
+    cursor_color = "#16afca"
+    foreground_color = "#e5e5e5"
+    palette = "#212121:#b7141f:#457b24:#f6981e:#134eb2:#560088:#0e717c:#efefef:#424242:#e83b3f:#7aba3a:#ffea2e:#54a4f3:#aa4dbc:#26bbd1:#d9d9d9"
+  [[New Profile]]
+    cursor_color = "#aaaaaa"
+  [[Solarized Dark]]
+    background_color = "#001e27"
+    cursor_color = "#708284"
+    foreground_color = "#708284"
+    palette = "#002831:#d11c24:#738a05:#a57706:#2176c7:#c61c6f:#259286:#eae3cb:#001e27:#bd3613:#475b62:#536870:#708284:#5956ba:#819090:#fcf4dc"
+  [[Solarized Dark - Patched]]
+    background_color = "#001e27"
+    cursor_color = "#708284"
+    foreground_color = "#708284"
+    palette = "#002831:#d11c24:#738a05:#a57706:#2176c7:#c61c6f:#259286:#eae3cb:#475b62:#bd3613:#475b62:#536870:#708284:#5956ba:#819090:#fcf4dc"
+  [[Solarized Dark Higher Contrast]]
+    background_color = "#001e27"
+    cursor_color = "#f34b00"
+    cursor_shape = ibeam
+    font = Inconsolata 11
+    foreground_color = "#9cc2c3"
+    icon_bell = False
+    palette = "#002831:#d11c24:#6cbe6c:#a57706:#2176c7:#c61c6f:#259286:#eae3cb:#006488:#f5163b:#51ef84:#b27e28:#178ec8:#e24d8e:#00b39e:#fcf4dc"
+    show_titlebar = False
+    use_system_font = False
+  [[SpaceGray]]
+    background_color = "#20242d"
+    cursor_color = "#b3b8c3"
+    foreground_color = "#b3b8c3"
+    palette = "#000000:#b04b57:#87b379:#e5c179:#7d8fa4:#a47996:#85a7a5:#b3b8c3:#000000:#b04b57:#87b379:#e5c179:#7d8fa4:#a47996:#85a7a5:#ffffff"
+  [[Violet Dark]]
+    background_color = "#1c1d1f"
+    cursor_color = "#708284"
+    foreground_color = "#708284"
+    palette = "#56595c:#c94c22:#85981c:#b4881d:#2e8bce:#d13a82:#32a198:#c9c6bd:#45484b:#bd3613:#738a04:#a57705:#2176c7:#c61c6f:#259286:#c9c6bd"
+  [[Zenburn]]
+    background_color = "#3f3f3f"
+    cursor_color = "#73635a"
+    foreground_color = "#dcdccc"
+    palette = "#4d4d4d:#705050:#60b48a:#f0dfaf:#506070:#dc8cc3:#8cd0d3:#dcdccc:#709080:#dca3a3:#c3bf9f:#e0cf9f:#94bff3:#ec93d3:#93e0e3:#ffffff"
