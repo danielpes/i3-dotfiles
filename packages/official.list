@@ -14,8 +14,8 @@ file-roller
 flashplugin
 ghostscript
 git
-gnome-keyring
 gksu
+gnome-keyring
 gparted
 gsimplecal
 gst-libav
@@ -38,6 +38,7 @@ network-manager-applet
 networkmanager
 nitrogen
 nm-connection-editor
+noto-fonts-emoji
 numlockx
 pavucontrol
 pcmanfm-gtk3
