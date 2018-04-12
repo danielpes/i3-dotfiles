@@ -11,9 +11,11 @@ My configuration files for i3wm. It also includes my scripts for a brand new set
 
 Some screenshots of the results:
 
-![img](screenshots/ws1+notif.png) 
+<span>
+<img src="screenshots/ws1+notif.png" width=640></img>
+<img src="screenshots/rofi.png" width=640></img>
+</span>
 
-![img](screenshots/rofi.png)
 
 ## Main Packages
 
