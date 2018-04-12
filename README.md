@@ -2,13 +2,13 @@
 
 My configuration files for i3wm. It also includes my scripts for a brand new setup on a freshly installed Antergos Base system.
 
-[Main Packages](##main-packages)</br>
-[Theming](##theming)</br>
-[Fonts](##fonts)</br>
-[Hotkeys](##hotkeys)</br>
-[Workspaces](##workspaces)</br>
-[Wallpaper](##wallpaper)</br>
-[Screenshots](##screenshots)
+[Main Packages](#main-packages)</br>
+[Theming](#theming)</br>
+[Fonts](#fonts)</br>
+[Hotkeys](#hotkeys)</br>
+[Workspaces](#workspaces)</br>
+[Wallpaper](#wallpaper)</br>
+[Screenshots](#screenshots)
 
 ## Main Packages
 
