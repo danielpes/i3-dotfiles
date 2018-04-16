@@ -9,6 +9,7 @@ compton
 cups
 cups-pdf
 curl
+dex
 dunst
 file-roller
 flashplugin
@@ -29,6 +30,7 @@ jdk8-openjdk
 jq
 libcups
 libsecret
+light-locker
 lsb-release
 lxappearance-gtk3
 lxinput-gtk3

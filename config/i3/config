@@ -399,7 +399,8 @@ exec --no-startup-id start_conky_maia
 exec_always --no-startup-id fix_xcursor
 
 # Set wallpaper
-exec_always --no-startup-id unsplash-wallpaper
+# exec_always --no-startup-id unsplash-wallpaper
+exec nitrogen --set-scaled /usr/share/pixmaps/wallpaper.jpg
 
 # Disable caps-lock
 exec --no-startup-id setxkbmap -option caps:none

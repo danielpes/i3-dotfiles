@@ -1,5 +1,4 @@
 #!/bin/bash
-eval $(ssh-agent -s)
-export SHELL=/usr/bin/zsh
+dex -a -s /etc/xdg/autostart/
 export ZDOTDIR=$HOME/.config/zsh/
 source $ZDOTDIR/.zshenv
