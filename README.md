@@ -3,7 +3,7 @@
 My personal linux configuration files for an i3wm environment. It also includes my scripts for a brand new setup on a freshly installed Antergos Base system.
 
 [Main Packages](#main-packages)</br>
-[Theming](#theming)</br>
+[Themes](#themes)</br>
 [Fonts](#fonts)</br>
 [Hotkeys](#hotkeys)</br>
 [Workspaces](#workspaces)</br>
