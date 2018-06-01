@@ -1,0 +1,14 @@
+[user]
+	email = danielpes91@gmail.com
+	name = Daniel de Paula e Silva
+	signingkey = D22E343C622221B9
+
+[commit]
+#	gpgsign = true
+
+[alias]
+	sign-branch = git rebase --exec 'git commit --amend --no-edit -n -S' $(git merge-base --fork-point @{u} HEAD)
+	sign-commit = commit --amend --no-edit -n -S
+
+[core]
+	hooksPath = /home/daniel/.git-hooks

@@ -12,6 +12,9 @@
   title_transmit_bg_color = "#001e27"
   title_use_system_font = False
 [keybindings]
+  broadcast_all = <Primary>a
+  broadcast_group = <Primary>g
+  broadcast_off = <Primary>o
   split_horiz = <Shift><Alt>d
   split_vert = <Alt>d
 [layouts]
@@ -36,6 +39,7 @@
 [plugins]
 [profiles]
   [[default]]
+    audible_bell = True
     background_color = "#2f343f"
     background_darkness = 0.95
     background_type = transparent
@@ -45,7 +49,7 @@
     font = Inconsolata 12
     foreground_color = "#9cc2c3"
     icon_bell = False
-    palette = "#002831:#d11c24:#6cbe6c:#a57706:#2176c7:#c61c6f:#259286:#eae3cb:#006488:#f5163b:#51ef84:#b27e28:#178ec8:#e24d8e:#00b39e:#fcf4dc"
+    palette = "#2f343f:#d11c24:#6cbe6c:#a57706:#2176c7:#c61c6f:#259286:#eae3cb:#006488:#f5163b:#51ef84:#b27e28:#178ec8:#e24d8e:#00b39e:#fcf4dc"
     scrollback_infinite = True
     scrollbar_position = hidden
     show_titlebar = False

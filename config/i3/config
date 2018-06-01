@@ -6,7 +6,7 @@ exec --no-startup-id setxkbmap -option altwin:swap_lalt_lwin
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 
-exec --no-startup-id xrandr --dpi 96
+exec --no-startup-id xrandr --dpi 192
 
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
@@ -35,13 +35,13 @@ floating_modifier $mod
 bindsym $mod+Return exec terminator
 bindsym $mod+KP_Enter exec terminator
 bindsym $mod+t exec terminator
+bindsym $mod+apostrophe exec terminator
 
 bindsym $mod+l exec --no-startup-id i3exit lock
 bindsym $mod+Shift+l exec --no-startup-id i3exit lock
 
 # kill focused window
 bindsym $mod+Escape kill
-bindsym $mod+apostrophe kill
 
 # start program launcher
 bindsym $mod+space exec --no-startup-id rofi -show run -theme /home/daniel/.config/rofi/theme.rasi
@@ -75,9 +75,9 @@ bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+Shift+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 #bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print exec --no-startup-id i3-scrot
-bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
-bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
+bindsym Print exec --no-startup-id scrot
+bindsym $mod+Print --release exec --no-startup-id scrot -w
+bindsym $mod+Shift+Print --release exec --no-startup-id scrot -s
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # focus_follows_mouse no
@@ -347,9 +347,9 @@ mode "$mode_gaps_outer" {
 
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.placeholder      #4b5162 #404552 #ffffff #000000 
+  client.placeholder      #2f343f #2f343f #ffffff #000000 
 
-  client.background       #4b5162
+  client.background       #2f343f
 
 #############################
 ### settings for i3-gaps: ###
@@ -371,10 +371,10 @@ gaps outer 0
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
 smart_borders no_gaps
 
-client.focused #4b5162 #404552 #ffffff #2e9ef4
-client.focused_inactive #4b5162 #404552 #ffffff #484e50
-client.unfocused #4b5162 #404552 #888888 #292d2e
-client.urgent #4b5162 #404552 #ffffff #900000
+client.focused #2f343f #2f343f #ffffff #2e9ef4
+client.focused_inactive #4b5162 #2f343f #ffffff #484e50
+client.unfocused #4b5162 #2f343f #888888 #292d2e
+client.urgent #4b5162 #2f343f #ffffff #900000
 
 
 # Autostart applications
@@ -389,7 +389,6 @@ exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
 
-exec --no-startup-id compton -b
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id start_conky_maia
@@ -399,11 +398,15 @@ exec --no-startup-id start_conky_maia
 exec_always --no-startup-id fix_xcursor
 
 # Set wallpaper
-# exec_always --no-startup-id unsplash-wallpaper
-exec nitrogen --set-scaled /usr/share/pixmaps/wallpaper.jpg
+# exec_always --no-startup-id unsplash-wallpaper 
+exec nitrogen --set-scaled /usr/share/pixmaps/wallpaper.jpg 
 
 # Disable caps-lock
 exec --no-startup-id setxkbmap -option caps:none
 
+# Compton
+exec_always --no-startup-id "killall compton; compton"
+
 # Polybar
 exec_always --no-startup-id "killall polybar;polybar -r main"
+

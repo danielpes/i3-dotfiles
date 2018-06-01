@@ -1,6 +1,6 @@
 [colors]
 ;My colors are set from .Xresources to match everything else
-my_background 	= #f2383c4a
+my_background 	= #f22f343f
 my_foreground 	= ${xrdb:foreground}
 my_secondary = #e24b5162
 my_color0	= ${xrdb:color0}
@@ -21,10 +21,10 @@ my_color14	= ${xrdb:color14}
 my_color15	= ${xrdb:color15}
 
 [bar/main]
-dpi = 96
+dpi = 144
 bottom = true
 width = 100%
-height = 36
+height = 64
 offset-x = 0%
 offset-y = 0%
 radius = 0.0
@@ -35,7 +35,7 @@ fixed-center = true
 background = ${colors.my_background}
 foreground =  ${colors.my_foreground}
 
-line-size = 4
+line-size = 5
 line-color = ${colors.my_color4}
 
 border-size = 0
@@ -46,18 +46,18 @@ padding-right = 0
 module-margin-left = 0
 module-margin-right = 0
 
-font-0 = Hack:fontformat=truetype:size=10;2
-font-1 = Lato:fontformat=truetype:size=10;2
-font-2 = Lato:fontformat=truetype:size=10;2
-font-3 = FontAwesome:fontformat=truetype:size=10;2
-font-4 = FontAwesome:fontformat=truetype:size=10;2
-font-5 = Font Awesome 5 Free:size=10;2
-font-6 = Font Awesome 5 Brands:size=10;3
-font-7 = Weather Icons:fontformat=truetype:size=10;3
+font-0 = Hack:fontformat=truetype:size=11;3
+font-1 = Lato:fontformat=truetype:size=11;3
+font-2 = Lato:fontformat=truetype:size=11;3
+font-3 = FontAwesome:fontformat=truetype:size=11;3
+font-4 = FontAwesome:fontformat=truetype:size=11;4
+font-5 = Font Awesome 5 Free:size=11;3
+font-6 = Font Awesome 5 Brands:size=11;3
+font-7 = Weather Icons:fontformat=truetype:size=11;4
 
 modules-left = i3 sep1 xwindow
 modules-center = spotify
-modules-right = weather sep3 volume sep3 cpu sep3 memory sep3 date sep3 powermenu
+modules-right = weather sep3 volume sep3 cpu sep3 memory sep3 date sep3 kb sep3 powermenu
 
 wm-restack = i3
 
@@ -121,15 +121,16 @@ label-font = 2
 [module/weather]
 type = custom/script
 exec = ~/.config/polybar/scripts/weather.sh
+click-left = xdg-open https://openweathermap.org/city/6452604
 interval = 600
 label-font = 8
 
 [module/cpu]
 type = internal/cpu
 interval = 2
-format =  %{A1:lxtask:}<label>%{A}
+format =  %{A1:gnome-system-monitor:}<label>%{A}
 label =   %percentage:2%%
-label-font = 5
+label-font = 4
 bar-load-indicator = 
 bar-load-width = 6
 bar-load-fill = ▐
@@ -139,9 +140,9 @@ bar-load-empty-foreground = ${colors.my_secondary}
 [module/memory]
 type = internal/memory
 interval = 4
-format = %{A1:lxtask:}<label> <bar-used>%{A}
-label = %gb_used%
-label-font = 2
+format = %{A1:gnome-system-monitor:}<label>%{A}
+label =   %gb_used% (%percentage_used%%)
+label-font = 5
 bar-used-indicator =
 bar-used-width = 6
 bar-used-foreground-0 = #6FB548
@@ -152,7 +153,6 @@ bar-used-foreground-4 = #D36A59
 bar-used-fill = ▐
 bar-used-empty = ▐
 bar-used-empty-foreground = ${colors.my_secondary}
-
 [module/volume]
 type = internal/volume
 format-volume = <ramp-volume> <label-volume>
@@ -161,6 +161,7 @@ label-volume = %percentage%%
 label-volume-font = 2
 ramp-volume-0 = 
 ramp-volume-1 = 
+ramp-volume-2 = 
 # bar-volume-width = 5
 # bar-volume-indicator =
 # bar-volume-fill = 
@@ -168,6 +169,11 @@ ramp-volume-1 = 
 # bar-volume-empty = 
 # bar-volume-empty-font = 3
 # bar-volume-empty-foreground = ${colors.my_secondary}
+
+[module/kb]
+type = internal/xkeyboard
+format = <label-layout>
+label-font = 2
 
 [module/powermenu]
 type = custom/menu

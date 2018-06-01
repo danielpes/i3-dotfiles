@@ -20,4 +20,4 @@ rofi.matching: normal
 rofi.theme-str: '#textbox-prompt-colon { str: ">"; margin: 0px 0.3em 0em 0em ;}'
 rofi.fullscreen: true
 rofi.display-run:
-rofi.dpi: 96
+rofi.dpi: 192
