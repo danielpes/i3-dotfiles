@@ -1,9 +1,5 @@
 gtk3
 i3-gaps
-lightdm-gtk-greeter
 rxvt-unicode
-xorg-apps
-xorg-server
-xorg-xinit
 yay
 zsh
