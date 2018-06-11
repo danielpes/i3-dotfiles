@@ -33,12 +33,6 @@ yay -S --needed --noconfirm  zsh-pure-prompt
 echo "===> Configuring zsh and zprofile..."
 cp -r ../config/zsh/. $ZDOTDIR
 
-# Create .xsession file
-echo "===> Creating $HOME/.xsession..."
-cp ../xsession $HOME/.xsession
-
-sudo systemctl enable lightdm.service
-
 sleep 2
 echo "Press any key to reboot..."
 read
