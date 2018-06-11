@@ -23,10 +23,6 @@ npm install -g express-generator
 npm install -g create-react-app
 npm install -g typescript
 
-# Global ruby gems
-echo "===> Installing ruby gems..."
-sudo gem install sass --no-user-install
-
 # VS Code extensions
 echo "===> Installing VSCode extensions"
 code --install-extension dbaeumer.vscode-eslint
