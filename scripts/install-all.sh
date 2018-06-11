@@ -32,11 +32,6 @@ code --install-extension robertohuertasm.vscode-icons
 code --install-extension xabikos.ReactSnippets
 code --install-extension zhuangtongfa.material-theme
 
-sudo systemctl enable NetworkManager.service
-sudo systemctl start NetworkManager.service
-sudo systemctl enable watchdog.service
-sudo systemctl start watchdog.service
-
 rm -rf $HOME/.tmp/*
 
 sleep 2
