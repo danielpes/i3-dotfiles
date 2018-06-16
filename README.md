@@ -41,7 +41,7 @@ Some screenshots of the results:
 
 ## Hotkeys
 
-As a keyboard+mouse fan, I configure most of my keyboard shortcuts to be reachable with the left hand. Some shortcuts examples include:s
+As a keyboard+mouse fan, I configure most of my keyboard shortcuts to be reachable with the left hand. Some examples:
 * `Mod+w,a,s,d`: Navigate tiled windows
 * `Mod+Shift+w,a,s,d`: Move focused tiled window
 * `Mod+q,e`: Navigate workspaces
