@@ -25,6 +25,7 @@ gst-plugins-base
 gst-plugins-good
 gstreamer
 gucharmap
+gthumb
 gvfs
 htop
 jdk8-openjdk
