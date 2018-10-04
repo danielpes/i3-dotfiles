@@ -1,0 +1,4 @@
+echo fs.inotify.max_user_watches=524288 | sudo tee /etc/sysctl.d/40-max-user-watches.conf && sudo sysctl --system
+sudo -u postgres createuser --interactive
+sudo usermod -a -G docker daniel
+

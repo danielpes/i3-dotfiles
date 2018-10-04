@@ -66,7 +66,7 @@ type = internal/i3
 
 ws-icon-0 = 1;
 ws-icon-1 = 2;
-ws-icon-2 = 3; 
+ws-icon-2 = 3; 
 ws-icon-3 = 4;
 ws-icon-default = 
 
@@ -120,7 +120,7 @@ label-font = 2
 
 [module/weather]
 type = custom/script
-exec = ~/.config/polybar/scripts/weather.sh
+exec = ~/.config/polybar/scripts/weather-simple.sh
 interval = 600
 label-font = 8
 

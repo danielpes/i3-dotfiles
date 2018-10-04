@@ -1,2 +1,4 @@
 wkey
 *.pyc
+*.secret
+.zcompdump-*

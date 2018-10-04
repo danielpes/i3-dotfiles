@@ -1,0 +1,4 @@
+alias chrome='google-chrome-stable'
+alias ungit='ungit --port=8484 --no-b &; sleep 1; chrome --app=http://localhost:8484'
+alias flowdock='chrome --app=https://flowdock.com'
+
