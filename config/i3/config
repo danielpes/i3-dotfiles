@@ -32,9 +32,9 @@ font pango:Lato 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec terminator
-bindsym $mod+KP_Enter exec terminator
-bindsym $mod+t exec terminator
+bindsym $mod+Return exec terminator -p nord
+bindsym $mod+KP_Enter exec terminator -p nord
+bindsym $mod+t exec terminator -p nord
 
 bindsym $mod+l exec --no-startup-id i3exit lock
 bindsym $mod+Shift+l exec --no-startup-id i3exit lock
@@ -379,12 +379,9 @@ client.urgent #4b5162 #404552 #ffffff #900000
 
 # Autostart applications
 exec --no-startup-id google-chrome-stable
-exec --no-startup-id i3-msg 'workspace $ws1; exec terminator'
+exec --no-startup-id i3-msg 'workspace $ws1; exec terminator -p nord'
 exec --no-startup-id code
-exec --no-startup-id franz
-exec --no-startup-id gitkraken
 exec --no-startup-id spotify
-
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
@@ -392,7 +389,6 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id compton -b
 # exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-exec --no-startup-id start_conky_maia
 
 # exec --no-startup-id xautolock -time 10 -locker blurlock
 

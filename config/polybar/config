@@ -50,14 +50,14 @@ font-0 = Hack:fontformat=truetype:size=10;2
 font-1 = Lato:fontformat=truetype:size=10;2
 font-2 = Lato:fontformat=truetype:size=10;2
 font-3 = FontAwesome:fontformat=truetype:size=10;2
-font-4 = FontAwesome:fontformat=truetype:size=10;2
+font-4 = FontAwesome:fontformat=truetype:size=10;3
 font-5 = Font Awesome 5 Free:size=10;2
 font-6 = Font Awesome 5 Brands:size=10;3
 font-7 = Weather Icons:fontformat=truetype:size=10;3
 
 modules-left = i3 sep1 xwindow
 modules-center = spotify
-modules-right = weather sep3 volume sep3 cpu sep3 memory sep3 date sep3 powermenu
+modules-right = weather sep3 volume sep3 cpu sep3 memory sep3 battery sep2 date sep3 powermenu
 
 wm-restack = i3
 
@@ -129,7 +129,7 @@ type = internal/cpu
 interval = 2
 format =  %{A1:lxtask:}<label>%{A}
 label =   %percentage:2%%
-label-font = 5
+label-font = 4
 bar-load-indicator = 
 bar-load-width = 6
 bar-load-fill = ▐
@@ -139,9 +139,9 @@ bar-load-empty-foreground = ${colors.my_secondary}
 [module/memory]
 type = internal/memory
 interval = 4
-format = %{A1:lxtask:}<label> <bar-used>%{A}
-label = %gb_used%
-label-font = 2
+format = %{A1:gnome-system-monitor:}<label>%{A}
+label =   %gb_used%  ( %percentage_used%% )
+label-font = 5
 bar-used-indicator =
 bar-used-width = 6
 bar-used-foreground-0 = #6FB548
@@ -161,6 +161,7 @@ label-volume = %percentage%%
 label-volume-font = 2
 ramp-volume-0 = 
 ramp-volume-1 = 
+ramp-volume-2 = 
 # bar-volume-width = 5
 # bar-volume-indicator =
 # bar-volume-fill = 
@@ -200,33 +201,34 @@ battery = BAT1
 adapter = AC
 full-at = 99
 
+label-font = 2
+label-charging-font = 2
+label-discharging-font = 2
+label-full-font = 2
+
+format-full = " <label-full>"
 format-full-background = ${colors.my_background}
 format-charging-background = ${colors.my_background}
-format-charging = "⁣  <label-charging> <animation-charging> "
-format-charging-underline = ${colors.my_color7}
+format-charging = " <animation-charging> <label-charging>"
 
 format-discharging-background = ${colors.my_background}
-format-discharging = "⁣ <label-discharging> <ramp-capacity> "
-format-discharging-underline = ${self.format-charging-underline}
+format-discharging = "<ramp-capacity>⁣ <label-discharging>"
 
-format-full-prefix-foreground = ${colors.my_background}
-format-full-underline = ${self.format-charging-underline}
-
-format-charing-background = ${colors.my_background}
+format-full-prefix-foreground = ${colors.my_foreground}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
-ramp-capacity-foreground = ${colors.my_secondary}
+ramp-capacity-foreground = ${colors.my_foreground}
 
 animation-charging-0 = 
 animation-charging-1 = 
 animation-charging-2 = 
 animation-charging-3 = 
 animation-charging-4 = 
-animation-charging-foreground = ${colors.my_secondary}
+animation-charging-foreground = ${colors.my_foreground}
 animation-charging-framerate = 750
 
 
@@ -245,7 +247,7 @@ margin-bottom = 5
 [module/xwindow]
 type = internal/xwindow
 label-font = 2
-label = %title:0:42:...%
+label = %title:0:52:...%
 label-padding = 1
 #format-background = ${colors.my_secondary}
 #format-underline = ${colors.my_foreground}

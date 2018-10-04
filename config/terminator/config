@@ -6,11 +6,12 @@
   suppress_multiple_term_dialog = True
   tab_position = hidden
   title_font = Lato Medium 9
-  title_inactive_bg_color = "#001e27"
-  title_inactive_fg_color = "#ffffff"
-  title_receive_bg_color = "#001e27"
-  title_transmit_bg_color = "#001e27"
-  title_use_system_font = False
+  title_inactive_bg_color = "#4C566A"
+  title_inactive_fg_color = "#D8DEE9"
+  title_receive_bg_color = "#8FBCBB"
+  title_receive_fg_color = "#2E3440"
+  title_transmit_bg_color = "#88C0D0"
+  title_transmit_fg_color = "#2E3440"
 [keybindings]
   split_horiz = <Shift><Alt>d
   split_vert = <Alt>d
@@ -42,7 +43,7 @@
     copy_on_selection = True
     cursor_color = "#f34b00"
     cursor_shape = ibeam
-    font = Inconsolata 12
+    font = Inconsolata 13
     foreground_color = "#9cc2c3"
     icon_bell = False
     palette = "#002831:#d11c24:#6cbe6c:#a57706:#2176c7:#c61c6f:#259286:#eae3cb:#006488:#f5163b:#51ef84:#b27e28:#178ec8:#e24d8e:#00b39e:#fcf4dc"
@@ -51,10 +52,7 @@
     show_titlebar = False
     use_system_font = False
   [[Ayu mirage]]
-    background_color = "#212733"
-    cursor_color = "#FFD580"
-    foreground_color = "#d9d7ce"
-    palette = "#212733:#ff3333:#bae67e:#ffd580:#5ccfe6:#d4bfff:#5ccfe6:#3d4752:#3e4b59:#ff3333:#bae67e:#ffd580:#5ccfe6:#d4bfff:#5ccfe6:#eeeeec"
+    cursor_color = "#aaaaaa"
   [[Flat]]
     background_color = "#002240"
     cursor_color = "#e5be0c"
@@ -116,3 +114,18 @@
     cursor_color = "#73635a"
     foreground_color = "#dcdccc"
     palette = "#4d4d4d:#705050:#60b48a:#f0dfaf:#506070:#dc8cc3:#8cd0d3:#dcdccc:#709080:#dca3a3:#c3bf9f:#e0cf9f:#94bff3:#ec93d3:#93e0e3:#ffffff"
+  [[nord]]
+    background_color = "#2e3440"
+    background_darkness = 0.95
+    background_type = transparent
+    copy_on_selection = True
+    cursor_color = "#D8DEE9"
+    cursor_shape = ibeam
+    font = Hack 11
+    foreground_color = "#d8dee9"
+    icon_bell = False
+    palette = "#3b4252:#bf616a:#a3be8c:#ebcb8b:#81a1c1:#b48ead:#88c0d0:#e5e9f0:#4c566a:#bf616a:#a3be8c:#ebcb8b:#81a1c1:#b48ead:#8fbcbb:#eceff4"
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
