@@ -29,12 +29,7 @@ sudo gem install sass --no-user-install
 
 # VS Code extensions
 echo "===> Installing VSCode extensions"
-code --install-extension dbaeumer.vscode-eslint
-code --install-extension eg2.tslint
-code --install-extension esbenp.prettier-vscode
-code --install-extension robertohuertasm.vscode-icons
-code --install-extension xabikos.ReactSnippets
-code --install-extension zhuangtongfa.material-theme
+code --install-extension shan.code-settings-sync
 
 sudo systemctl enable NetworkManager.service
 sudo systemctl start NetworkManager.service
