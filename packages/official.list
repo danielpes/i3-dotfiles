@@ -50,6 +50,7 @@ perl-anyevent-i3
 playerctl
 pulseaudio
 pulseaudio-alsa
+pulseaudio-bluetooth
 python-pip
 python2-requests
 rofi

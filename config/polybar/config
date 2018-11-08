@@ -199,7 +199,7 @@ menu-0-3-exec = i3exit shutdown
 type = internal/battery
 battery = BAT1
 adapter = AC
-full-at = 99
+full-at = 97
 
 label-font = 2
 label-charging-font = 2
